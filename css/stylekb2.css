@@ -1,0 +1,139 @@
+a:hover{
+    color: blue;
+ }
+ .droite{
+    float: right;
+    padding-right: 10px;
+ padding-left: 10px;
+ color: beige;
+ padding-bottom: 5px;
+ text-decoration: none;
+  }
+ 
+  .gauche{
+     padding-right: 10px;
+     padding-left: 10px;
+     color: beige;
+     padding-bottom: 5px;
+     text-decoration: none;
+  }
+
+  nav{
+    grid-area: navigateur;
+    background-color: grey;
+    padding-top: 10px;
+    border: 1px solid black;
+  }
+  .grille{
+    background-image: url('../imagesKB2/107794948_gettyimages-681946576.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+    "navigateur navigateur navigateur "
+    "header header header"
+    "figure1 figure2 figure3 "
+    "figure4 figure5 figure6 "
+    "figure7 figure8 figure9 "
+    "main main main"
+    "footer footer footer "
+    ;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+@keyframes couleur-fondu {
+    0% {color: indigo;}
+  14% {color: purple;}
+  28% {color: blue;}
+  42% {color: cyan;}
+  57% {color: #00BA71;}
+  71% {color: #FAD717;}
+  85% {color: #FA8901;}
+  100% {color: #F43545;}
+
+  }
+  
+  .texte-couleur {
+    animation: couleur-fondu 6s ease-in-out infinite;
+    border: 2px solid cyan;
+    background-color: black;
+  }
+main{
+    grid-area: main;
+    padding-left: 10px;
+    color: cyan;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+footer{
+    grid-area: footer;
+    background-color: gray;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    img{
+        max-height: 350px;
+        max-width: 350px;
+        margin: auto;
+        height: 350px;
+        width: 350px;
+        border: 5px solid cyan;
+        border-radius: 15px;
+       }
+
+
+       #f1{
+        grid-area: figure1;
+       }
+       #f2{
+        grid-area: figure2;
+       }
+       #f3{
+        grid-area: figure3;
+       }
+       #f4{
+        grid-area: figure4;
+       }
+       #f5{
+        grid-area: figure5;
+       }
+       #f6{
+        grid-area: figure6;
+       }
+       #f7{
+        grid-area: figure7;
+       }
+       #f8{
+        grid-area: figure8;
+       }
+       #f9{
+        grid-area: figure9;   
+       }
+figure{
+margin: auto;
+padding-top: 25px;
+padding-bottom: 10px;
+}
+
+img:hover{
+    transition: transform 0.3s, filter 0.3s;
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
+header{
+    grid-area: header;
+    background-color: cyan;
+    text-align: center;
+
+}

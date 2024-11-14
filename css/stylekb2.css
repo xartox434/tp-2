@@ -133,7 +133,7 @@ img:hover{
 }
 header{
     grid-area: header;
-    background-color: cyan;
     text-align: center;
+
 
 }
